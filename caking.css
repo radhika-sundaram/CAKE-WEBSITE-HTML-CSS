@@ -1,0 +1,928 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/******** nav ***********/
+nav{
+    display: flex;
+      background-color: rgb(178, 217, 225);
+    height: 80px;
+  
+}
+/****** logo *******/
+ .logo{
+    font-size: 30px;
+    margin-left: 10px;
+    color: tomato;
+    margin-top: 25px;
+}
+   .logo:hover{
+color: black;
+}
+nav ul {
+    display: flex;
+    gap: 60px;
+    list-style: none;
+    margin-left: auto;
+    align-items: center;
+    margin-right: 100px;
+}
+nav ul li a{
+
+    text-decoration: none;
+    font-size:25px;
+    color: white;
+    text-transform: capitalize;
+font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+ 
+ padding: 8px 5px; /* Add padding here */
+    transition: background-color 0.3s ease;
+    border-radius: 6px; /* Optional: makes the hover background rounded */
+}
+
+nav ul li a:hover{
+   background-color: rgb(13, 10, 11);
+   color: white;
+border-radius: 20px;
+
+}
+
+.ordera button {
+  background-color: tomato;
+  border: none;
+  border-radius: 40px;
+  padding: 10px 30px;
+  margin-top: 15px;
+  margin-right: 40px;
+}
+
+.ordera button a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+
+}
+
+.ordera button:hover {
+  background-color: red;
+  transition: 0.5s ease;
+}
+/******* image page *******/
+
+.container{
+    background-image: url(./IMAGES/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   height: 100vh;
+}
+
+/* Remove background only for the product page & login-page */
+.product-page .container {
+  background-image: none !important;
+  background-color: transparent !important;
+}
+.login-page .container {
+  background-image: none !important;
+  background-color: transparent !important;
+
+}
+.service-caking.container {
+  background-image: none !important;
+  background-color: transparent !important;
+
+}
+
+/*
+.cakecontent p{
+    height: 80px;
+    padding-top: 180px;
+    padding-left: 60px;
+    font-size: 60px;
+    font-weight: 900;
+    color: white;
+       
+}
+
+
+#view{
+    height: 40px;
+    width: 140px;
+    margin-left: 280px;
+    border-radius: 30px;
+    border: none;
+    font-size: 18px;
+    font-weight: 900;
+
+}
+.ordernow{
+    height: 35px;
+    width: 140px;
+    margin-left: 30px;
+    border-radius: 30px;
+    border: none; 
+    font-size: 18px;
+    font-weight: 900;
+}
+*/
+/* Parent paragraph styling */
+.cakecontent p {
+  padding-top: 200px;
+  padding-left: 80px;
+  font-size: 50px;
+  font-weight: 900;
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* Reset margin/padding if inherited */
+.buttoncontainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  gap: 10px; /* minimal space between buttons */
+  padding-left: 260px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+#view,
+.ordernow {
+  height: 40px;
+  width: 140px;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  font-weight: 900;
+  margin: 0; /* remove extra spacing */
+  padding: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#view {
+  background-color: tomato;
+  color: #fff;
+}
+
+.ordernow {
+  background-color: tomato;
+  color: #fff;
+}
+
+
+
+
+
+  .hamper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: rgb(240, 124, 124);
+  padding: 40px 20px;
+}
+
+.about {
+  flex: 1 1 50%;
+  color: white;
+  padding: 10px;
+  text-align: center; /* Default for large screens */
+}
+
+.about h2 {
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.about p {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+#explore {
+  width: 200px;
+  background-color: white;
+  color: rgb(152, 48, 22);
+  font-size: 20px;
+  font-weight: bold;
+  padding: 18px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  margin-top: 10px;
+}
+
+#explore:hover {
+  background-color: red;
+  color: white;
+}
+
+.hamperimage {
+  flex: 1 1 45%;
+  text-align: center;
+}
+
+.hamperimage img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.hamperimage marquee {
+  width: 100%;
+}
+
+
+/*================FLOWER==========*/
+
+.flowertitle p{
+text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  color: rgb(12, 9, 9);
+  margin: 40px 0 20px;
+  text-shadow: 2px 2px 4px rgba(113, 7, 7, 0.3);
+
+}
+/* ==== CONTAINER ==== */
+.flowercontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+   background-color:rgb(240, 124, 124);
+}
+
+.flowerlist {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.flowerlist:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 12px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.flowerlist img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+/* ==== PRICE ==== */
+.flowerprice p {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+  margin: 10px 20px 5px;
+  color: #e74c3c;
+}
+
+/* ==== FLOWER NAME ==== */
+.flowername p
+ {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  margin: 0 20px 10px;
+  color: #2c3e50;
+}
+
+
+
+/* ==== ORDER BUTTON ==== */
+
+.order3 {
+  display: block;
+  width: 80%;
+  margin: 15px auto 20px;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: white;
+  color: black;
+
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+.order3:hover {
+  background-color: red;
+  color: white;
+}
+
+
+
+
+/* ========================== SECTION TITLES ========================== */
+.producttitle p,
+.producttitle1 p,
+.producttitle2 p {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  color: rgb(12, 9, 9);
+  margin: 40px 0 20px;
+  text-shadow: 2px 2px 4px rgba(113, 7, 7, 0.3);
+}
+
+/* ==== CONTAINER ==== */
+.productcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+   background-color:rgb(240, 124, 124);
+}
+
+/* ==== PRODUCT CARD BASE (Shared) ==== */
+.productlist,
+.productlist1,
+.productlist2 {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.productlist:hover,
+.productlist1:hover,
+.productlist2:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 12px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* ==== IMAGES ==== */
+.productlist img,
+.productlist1 img,
+.productlist2 img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+/* ==== PRICE ==== */
+.price p,
+.price1 p,
+.price2 p {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+  margin: 10px 20px 5px;
+  color: #e74c3c;
+}
+
+/* ==== CAKE TITLE ==== */
+.caketitle p,
+.caketitle1 p,
+.caketitle2 p{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  margin: 0 20px 10px;
+  color: #2c3e50;
+}
+
+/* ==== ORDER BUTTON ==== */
+.order,
+.order1,
+.order2 {
+  display: block;
+  width: 80%;
+  margin: 15px auto 20px;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: white;
+  color: black;
+
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.order:hover,
+.order1:hover
+.order2:hover {
+  background-color: red;
+  color: white;
+}
+
+.page{
+ background-color:lightcoral;
+}
+.page{
+  
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+    align-items: center;
+    border: none;
+}
+.page ul{
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    list-style: none;
+    height: 60px;
+    border-radius: 50px;
+   
+}
+.page ul li{
+    margin-top: 16px;
+}
+.page ul li a{
+      border: 1px solid rgb(14, 14, 13);
+      border-radius: 10%;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+     color: black;
+}
+.page ul li a:hover{
+    background-color: black;
+    border-radius: 50%;
+    transition: all 0.3s;
+   
+}
+/* Base footer styles */
+footer {
+  background-color: rgb(10, 8, 8);
+  color: white;
+  padding-top: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+/* Footer container to organize items */
+.footercontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Left section */
+.footeritem {
+  flex: 1 1 300px;
+  margin: 20px;
+}
+
+.footeritem h2 {
+  font-size: 35px;
+  padding-bottom: 15px;
+}
+
+.footeritem p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Form styling */
+.footer-form {
+  margin-top: 20px;
+}
+
+.footer-form #email {
+  height: 45px;
+  width: 80%;
+  max-width: 300px;
+  border: none;
+  border-radius: 10px;
+  padding-left: 20px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#submit {
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#submit:hover {
+  background-color: red;
+  color: white;
+}
+
+/* Center and right section */
+.footer-item1,
+.footer-item2 {
+  flex: 1 1 250px;
+  margin: 20px;
+}
+
+.footer-item1 h2,
+.footer-item2 h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-item1 ul,
+.footer-item2 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-item1 li,
+.footer-item2 li {
+  padding: 5px 0;
+}
+
+.footer-item1 a,
+.footer-item2 a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-item1 a:hover,
+.footer-item2 a:hover {
+  text-decoration: underline;
+  color: brown;
+}
+
+/* Copyright text */
+.ptag p {
+  font-size: 16px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+
+
+/********************************cake-service********************/
+
+.service {
+  padding: 40px 10px;
+  text-align: center;
+  background-color: #fce4ec;
+}
+
+.service h1 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+}
+
+.service h1 span {
+  color: #e91e63;
+}
+
+.box-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 640px; /* Max width to avoid stretching */
+  margin: 0 auto;
+  gap: 10px; /* small gap between boxes */
+  flex-wrap: wrap;
+}
+
+.box {
+  flex: 1 1 300px; /* grow-shrink-basis */
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.box button {
+  margin-top: 12px;
+  padding: 10px 20px;
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.box button:hover {
+  background-color: #c2185b;
+}
+
+
+
+
+
+/*******************cake-login*****************/
+
+.login-page {
+  background: url(./IMAGES/cakinglogin.webp);
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 110vh
+}
+
+
+/*  Remove .container background ONLY on login page */
+.login-page .container {
+  background: none !important;
+}
+
+.form-container {
+    border: 2px solid rgb(192, 189, 189);
+    height: 450px;
+    width: 500px;
+    margin: 120px auto;
+    backdrop-filter: blur(6px);
+}
+
+.form-container :hover {
+    box-shadow: 0px 0px 20px 5px rgb(196, 182, 182);
+    
+}
+
+form h1 {
+    text-align: center;
+    margin: 50px 0px 20px 0px;
+    color: rgb(3, 3, 1);
+    font-size:35px;
+    font-weight: 900;
+}
+
+input[type=text] {
+    height: 40px;
+    width: 80%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+input[type=checkbox] {
+    margin-left: 20px;
+    color: black;
+}
+
+label {
+    color: black;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+button {
+    height: 50px;
+    width: 150px;
+    margin: 35px 170px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(255, 115, 0);
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+button:hover {
+    box-shadow: 0px 0px 15px 5px tomato;
+    background-color: rgb(231, 65, 36);
+}
+
+.forgot {
+    padding-left: 100px;
+
+}
+
+.forgot a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 13px;
+}
+
+.create p {
+    text-align: center;
+    font-size: 20px;
+    margin-left: 4px;
+}
+
+.create a {
+    text-decoration: none;
+    color: rgb(7, 10, 7);
+    margin-left: 30px;
+}
+
+
+
+  @media (max-width: 576px) 
+  {
+/***************** nav***********/
+
+
+  .container nav {
+
+    flex-direction: column;
+    align-items: flex-start; /* Align everything to the left */
+    height: auto;
+    padding: 20px 15px;
+    width: 100%;
+  }
+
+  .container .logo {
+    font-size: 20px;
+    margin: 5px ;
+    text-align: right;
+   
+    
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 2px;
+    margin: 10px 0;
+    padding: 0;
+    align-items: flex-start; /* Align items in the ul to the left */
+  }
+
+  nav ul li a {
+    font-size: 20px;
+   display: block;
+  }
+
+  
+  .ordera {
+    margin-top: -20px;
+  
+  }
+
+  .ordera button {
+    padding: 5px 10px; /* Smaller button size */
+    font-size: 12px;
+    border-radius: 20px;
+  }
+
+  .ordera button a {
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+  }
+.container{
+  width: 100%;
+}
+
+
+/****************caking home******************/
+
+
+ .cakecontent p {
+    font-size: 28px;
+    padding-left: 15px;
+    padding-top: 80px;
+  }
+
+  .buttoncontainer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 15px;
+    gap: 3px;
+  }
+
+  #view,
+  .ordernow {
+    width: 70%;
+  }
+
+
+
+  
+
+/**************caking about************ */
+ 
+  .hamper {
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  .about {
+    flex: 1 1 100%;
+    text-align: right;
+  }
+
+  .about h2,
+  .about p {
+    text-align: right;
+  }
+
+  #explore {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .hamperimage {
+    flex: 1 1 100%;
+  }
+
+
+
+
+
+
+/***************cakelogin*******************/
+
+
+.form-container {
+    width: 90%;
+    height: auto;
+    margin: 60px auto;
+    padding: 20px;
+  }
+
+  form h1 {
+    font-size: 28px;
+    margin: 30px 0 15px;
+  }
+
+  input[type="text"] {
+    width: 90%;
+    margin-left: 5%;
+    height: 38px;
+    font-size: 16px;
+  }
+
+  input[type="checkbox"] {
+    margin-left: 5%;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  .forgot {
+    padding-left: 5%;
+    margin-top: 10px;
+  }
+
+  .forgot a {
+    font-size: 16px;
+  }
+
+  button {
+    width: 80%;
+    margin: 30px 10%;
+    font-size: 16px;
+  }
+
+  .create p {
+    font-size: 16px;
+  }
+
+  .create a {
+    font-size: 16px;
+    margin-left: 5px;
+  }
+
+  }
+
+
+
+
+
+
+  
+
+  
+

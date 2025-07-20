@@ -1,0 +1,10 @@
+(self["webpackChunk_canva_web"] = self["webpackChunk_canva_web"] || []).push([[29880],{
+
+/***/ 315565:
+function(_, __, __webpack_require__) {__webpack_require__.n_x = __webpack_require__.n;const __web_req__ = __webpack_require__;__web_req__(813110);self._88e79ef67272193100c646da570c27cc = self._88e79ef67272193100c646da570c27cc || {};(function(__c) {var ikb,kkb,jkb,hkb;ikb=function(a,b){return hkb.toArray(Array.from(b,(c,d)=>{if(c instanceof Element){const f=ikb(a,c.childNodes),g=a.opa.get(c.tagName.toUpperCase());if(g)try{return g(c,f,d)}catch(h){var e;(e=a.onError)===null||e===void 0||e.call(a,h)}return f}if(c instanceof Text)return c.textContent}))};__c.io=function(a,b,c){a.opa.set(b.toUpperCase(),c);return a};
+kkb=async function(a){const b=Date.now(),c=await a.cache.keys();await Promise.all(c.map(async d=>{const e=await a.cache.match(d);e&&jkb(e,b)&&await a.cache.delete(d)}))};jkb=function(a,b){a=a.headers.get("X-Expire");return!!a&&b>=parseInt(a,10)};hkb=__webpack_require__(875604).Children;__c.jo=class{render(a){return ikb(this,this.QSe.parseFromString(a,"text/html").body.childNodes)}constructor(a){this.onError=a;this.opa=new Map;this.QSe=new DOMParser}};__c.lkb=class{static async create(a){try{const b=await a.caches.open("blobs");return new __c.lkb(b,a)}catch(b){}}i3a(a,b,c,d){d=d?Date.now()+d:void 0;const e=new this.window.Headers;c&&e.set("X-Name",encodeURI(c));d&&e.set("X-Expire",d.toString(10));return this.cache.put(`/${encodeURIComponent(a)}`,new this.window.Response(b,{headers:e}))}async getBlob(a){if((a=await this.cache.match(`/${encodeURIComponent(a)}`))&&!jkb(a,Date.now())){var b=a.headers.get("X-Name");b=b?decodeURI(b):void 0;return{blob:await a.blob(),
+name:b}}}async w0c(a){await this.cache.delete(`/${encodeURIComponent(a)}`)}constructor(a,b){this.cache=a;this.window=b;this.window.requestIdleCallback?this.window.requestIdleCallback(()=>kkb(this)):setTimeout(()=>kkb(this),6E4)}};
+}).call(self, self._88e79ef67272193100c646da570c27cc);}
+
+}])
+//# sourceMappingURL=sourcemaps/6550bf24833e6f41.js.map
